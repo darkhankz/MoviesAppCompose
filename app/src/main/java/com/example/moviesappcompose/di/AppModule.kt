@@ -21,7 +21,8 @@ object AppModule {
         Retrofit.Builder().baseUrl(baseUrl)
             .addConverterFactory(
                 GsonConverterFactory
-                    .create())
+                    .create()
+            )
             .build()
             .create(ApiService::class.java)
 }
